@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shop</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VM58ObvvEWQpy88d7CxN2LCm8vZ6y9COjgnLIJwFDQ&s" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Clothes Shop</h1>
+    <div class="container">
+        <div class="categories">
+            <div class="checkboxes">
+                <h2>Categories</h2>
+                <div class="cart-icon">
+                    <img src="image/cart.svg" alt="Cart">
+                    <span class="cart-quantity">0</span>
+                </div>
+                <label><input type="checkbox" id="men"> Men</label>
+                <label><input type="checkbox" id="women"> Women</label>
+                <label><input type="checkbox" id="kids"> Kids</label>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search..." onkeyup="handleSearch()">
+            </div><br><br>
+            <h2>Cart</h2>
+            <div id="cart-items" class="cart-items"></div>
+        </div>
+        <div class="product-list-container">
+            <div id="product-list" class="product-list"></div>   
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
